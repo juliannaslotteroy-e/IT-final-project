@@ -10,7 +10,7 @@
   align-items: center;
   padding: 0 40px;
   height: 80px;
-  background: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728);
+  background: linear-gradient(135deg, #2b1f1a, #655848, #362819);
 }
 
 .logo-group {
@@ -21,7 +21,7 @@
 
 .logo-text {
   font-size: 35px;
-  color: #333;
+  color: rgb(252, 233, 233);
   font-family: "Updock", cursive;
 }
 
@@ -48,13 +48,13 @@ nav a:hover {
 
 .hero {
   height: calc(100vh - 80px);
-  background-image: url(bilder/cake4.webp);
+  background-image: url(bilder/siste.png);
   background-position: center;
   background-size: cover;
 }
 
 .boks-hero {
-  background-color: #FCF6BA;
+  background-color: #655848;
   height: 100%;
   width: fit-content;
   margin-left: 50px;
@@ -68,6 +68,7 @@ h1 {
   font-size: 120px;
   padding-left: 90px;
   padding-top: 120px;
+  color: rgb(252, 233, 233);
 }
 
 .hero-tekst {
@@ -76,10 +77,11 @@ h1 {
   line-height: 30px;
   padding-left: 90px;
   max-width: 600px;
+  color: rgb(252, 233, 233);
 }
 
 .forste {
-  background-color: #FCF6BA;
+  background-color: #655848;
   min-height: 100vh;
   position: relative;
   display: flex;
@@ -90,7 +92,7 @@ h1 {
 .boks2 {
   width: 800px;
   height: 100px;
-  background-color: #BF953F;
+  background-color: #2b1f1a;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,6 +102,7 @@ h1 {
   left: 0;
   right: 0;
   margin: 0 auto;
+  color: rgb(252, 233, 233);
 }
 
 .fa-blender, .fa-clock, .fa-egg {
@@ -130,7 +133,7 @@ h1 {
   font-family: "Updock", cursive;
   font-size: 50px;
   margin-bottom: 30px;
-  color: #BF953F;
+  color: rgb(252, 233, 233);
 }
 
 .steg {
@@ -143,8 +146,8 @@ h1 {
 .steg-nummer {
   min-width: 40px;
   height: 40px;
-  background-color: #BF953F;
-  color: white;
+  background-color: rgb(252, 233, 233);
+  color: #2b1f1a;
   font-family: "Handlee", cursive;
   font-size: 24px;
   border-radius: 50%;
@@ -159,21 +162,24 @@ h1 {
   line-height: 1.6;
   padding: 0;
   max-width: 100%;
+  color: rgb(252, 233, 233);
 }
 
 .sjekkliste-boks {
   width: 20%;
   height: fit-content;
   padding: 40px;
-  background-color: #E5C97A;
+  background-color: #2b1f1a;
   margin-top: 55px;
   padding: 50px;
+  color: rgb(252, 233, 233);
 }
 
 .sjekkliste-boks h2 {
   font-family: "Updock", cursive;
   font-size: 40px;
   margin-bottom: 20px;
+  color: rgb(252, 233, 233);
 }
 
 .sjekkliste-boks label {
@@ -187,7 +193,7 @@ h1 {
 }
 
 .footer {
-  background-color: #B38728;
+  background-color: #2b1f1a;
   text-align: center;
   padding: 20px;
   font-family: "Handlee", cursive;
@@ -198,6 +204,7 @@ h1 {
   padding: 0;
   max-width: 100%;
   line-height: normal;
+  color: rgb(252, 233, 233);
 }
 
 @media (max-width: 1024px) {

@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 80px;
+    background: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728);
+    position: sticky; top: 0; z-index: 100;
+}
+
+.logo-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-text {
+    font-size: 35px;
+    color: #333;
+    font-family: "Updock", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo {
+    height: 70px;
+    width: auto;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(252, 233, 233);
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: rgb(252, 233, 233);
+    text-decoration: underline;
+}

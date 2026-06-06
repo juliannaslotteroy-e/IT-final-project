@@ -16,17 +16,29 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo-group">
-            <img src="bilder/logo.jpg" alt="Logo" class="logo">
-            <span class="logo-text">Sweet Crumbs</span>
-        </div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About us</a>
-            <a href="#">Recipe</a>
-        </nav>
-    </header>
+    <header class="header" id="main-header">
+  <div class="logo-group">
+    <img src="bilder/logo.jpg" alt="Logo" class="logo">
+    <span class="logo-text">Sweet Crumbs</span>
+  </div>
+  <nav id="main-nav">
+    <a href="#">Home</a>
+    <a href="aboutus.html">About us</a>
+    <a href="#">Recipe</a>
+  </nav>
+</header>
+
+
+<div class="hamburger-wrapper" id="hamburger-wrapper">
+  <button class="hamburger-btn" id="hamburger-btn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="hamburger-menu" id="hamburger-menu">
+    <a href="#">Home</a>
+    <a href="aboutus.html">About us</a>
+    <a href="#">Recipe</a>
+  </div>
+</div>
 
     <section class="hero">
         <h1>Baking is fun!</h1>
@@ -69,6 +81,35 @@
   <p>© 2025 Sweet Crumbs. All rights reserved.</p>
 </footer>
 
+<script>
+  const header = document.getElementById('main-header');
+  const hamburgerWrapper = document.getElementById('hamburger-wrapper');
+  const hamburgerBtn = document.getElementById('hamburger-btn');
+  const hamburgerMenu = document.getElementById('hamburger-menu');
+
+  window.addEventListener('scroll', () => {
+    const headerBottom = header.getBoundingClientRect().bottom;
+    if (headerBottom < 0) {
+      hamburgerWrapper.classList.add('visible');
+    } else {
+      hamburgerWrapper.classList.remove('visible');
+      hamburgerBtn.classList.remove('open');
+      hamburgerMenu.classList.remove('open');
+    }
+  });
+
+  hamburgerBtn.addEventListener('click', () => {
+    hamburgerBtn.classList.toggle('open');
+    hamburgerMenu.classList.toggle('open');
+  });
+
+  hamburgerMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburgerBtn.classList.remove('open');
+      hamburgerMenu.classList.remove('open');
+    });
+  });
+</script>
 </body>
 
 </html>

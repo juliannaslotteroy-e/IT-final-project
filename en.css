@@ -299,7 +299,6 @@ h1 {
   }
 }
 
-/* Liten mobil (maks 480px) */
 @media (max-width: 480px) {
   .logo-text {
     font-size: 22px;

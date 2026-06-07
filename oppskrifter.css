@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: 80px;
+  background: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728);
+}
+
+.logo-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-text {
+    font-size: 35px;
+    color: #333;
+    font-family: "Updock", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo {
+    height: 70px;
+    width: auto;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(252, 233, 233);
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: rgb(252, 233, 233);
+    text-decoration: underline;
+}
+
+.main {
+    background-color: #fefbdd;
+    min-height: fit-content;
+    padding-bottom: 100px;
+}
+
+.overskrift {
+    font-size: 70px;
+    font-family: "Updock", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 90px;
+    padding-top: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.oppskrift-en {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+    margin-left: 5%;
+    margin-top: 50px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.boks {
+    display: flex;
+}
+
+.bdag-img {
+    height: 250px;
+}
+
+.h1-boks {
+    font-family: "Updock", cursive;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.tekst-bdag {
+    color: #333;
+    padding: 20px;
+}
+
+p {
+    font-family: "Handlee", cursive;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.footer {
+  background: linear-gradient(135deg, #BF953F, #ffffff, #B38728);
+  text-align: center;
+  padding: 20px;
+  font-family: "Handlee", cursive;
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .overskrift {
+    font-size: 52px;
+    padding-left: 40px;
+  }
+
+  .oppskrift-en {
+    width: 88%;
+    margin-left: 5%;
+  }
+
+  .h1-boks {
+    font-size: 40px;
+  }
+
+  .bdag-img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  .logo-text {
+    font-size: 26px;
+  }
+
+  nav {
+    gap: 15px;
+  }
+
+  .overskrift {
+    font-size: 38px;
+    padding-left: 20px;
+    padding-top: 30px;
+  }
+
+  .oppskrift-en {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+
+  .boks {
+    flex-direction: column;
+  }
+
+  .bdag-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .h1-boks {
+    font-size: 36px;
+  }
+
+  .tekst-bdag p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 22px;
+  }
+
+  nav a {
+    font-size: 0.85rem;
+  }
+
+  .overskrift {
+    font-size: 30px;
+  }
+
+  .bdag-img {
+    height: 180px;
+  }
+
+  .h1-boks {
+    font-size: 30px;
+  }
+
+  .tekst-bdag {
+    padding: 15px;
+  }
+}

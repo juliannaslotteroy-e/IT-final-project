@@ -238,7 +238,6 @@ h1 {
   }
 }
 
-/* Mobil (maks 768px) */
 @media (max-width: 768px) {
   .header {
     padding: 0 20px;

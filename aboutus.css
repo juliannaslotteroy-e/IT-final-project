@@ -10,8 +10,7 @@
     align-items: center;
     padding: 0 40px;
     height: 80px;
-    background: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728);
-    position: sticky; top: 0; z-index: 100;
+    background-color: rgb(27, 27, 27);
 }
 
 .logo-group {
@@ -22,7 +21,7 @@
 
 .logo-text {
     font-size: 35px;
-    color: #333;
+    color: rgb(252, 233, 233);
     font-family: "Updock", cursive;
     font-weight: 400;
     font-style: normal;
@@ -48,4 +47,365 @@ nav a {
 nav a:hover {
     color: rgb(252, 233, 233);
     text-decoration: underline;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url(bilder/auhero.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.hero-tekst {
+    color: rgb(252, 233, 233);
+    background-color: rgba(27, 27, 27, 0.85);
+    padding: 60px 50px;
+    max-width: 550px;
+    margin-left: 80px;
+}
+
+.hero-tekst h1 {
+    font-family: "Updock", cursive;
+    font-size: 80px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hero-tekst p {
+    font-family: "Handlee", cursive;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 100%;
+}
+
+.forste {
+    height: 100vh;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forstimg {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-left: 150px;
+}
+
+.tekstfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    color: rgb(252, 233, 233);
+    padding: 30px;
+}
+
+.fohe {
+    font-family: "Updock", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+}
+
+.fote {
+    font-family: "Handlee", cursive;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 100%;
+}
+
+.andre {
+    height: 100vh;
+    background-image: url(bilder/boarder.png);
+    display: flex;
+    align-items: center;
+}
+
+.accordion {
+    max-width: 600px;
+    margin: 60px auto;
+}
+
+.accordion-item {
+    border-bottom: 1px solid rgb(27, 27, 27);
+}
+
+.accordion-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    color: rgb(27, 27, 27);
+    font-family: "Handlee", cursive;
+    font-size: 20px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.ikon {
+    font-size: 28px;
+    transition: transform 0.3s ease;
+    line-height: 1;
+}
+
+.accordion-btn.aktiv .ikon {
+    transform: rotate(45deg);
+}
+
+.accordion-innhold {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-innhold p {
+    padding: 0 0 20px 0;
+    padding-left: 0;
+    font-family: "Handlee", cursive;
+    font-size: 17px;
+    line-height: 1.7;
+    color: rgba(27, 27, 27, 0.75);
+}
+
+.tredje {
+    height: 100vh;
+    background-color: rgb(27, 27, 27);
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: rgb(252, 233, 233);
+}
+
+.karusell {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.karusell-vindu {
+    width: 600px;
+    overflow: hidden;
+}
+
+.karusell-spor {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.karusell-spor img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.pil {
+    background: none;
+    border: 2px solid rgb(252, 233, 233);
+    color: rgb(252, 233, 233);
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.pil:hover {
+    background-color: #bf3f72;
+    border-color: #bf3f70;
+}
+
+.karusell-teller {
+    margin-top: 16px;
+    font-family: "Handlee", cursive;
+    font-size: 18px;
+    color: rgba(252, 233, 233, 0.6);
+}
+
+.footer {
+  background: linear-gradient(135deg, #BF953F, #ffffff, #B38728);
+  text-align: center;
+  padding: 20px;
+  font-family: "Handlee", cursive;
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .hero-tekst {
+    margin-left: 40px;
+    max-width: 450px;
+  }
+
+  .hero-tekst h1 {
+    font-size: 60px;
+  }
+
+  .forstimg {
+    height: 380px;
+    margin-left: 40px;
+  }
+
+  .fohe {
+    font-size: 70px;
+  }
+
+  .karusell-vindu {
+    width: 450px;
+  }
+
+  .karusell-spor img,
+  .karusell-kort {
+    width: 450px;
+  }
+
+  .tredje h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 20px;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  .logo-text {
+    font-size: 26px;
+  }
+
+  nav {
+    gap: 15px;
+  }
+
+  .hero {
+    align-items: flex-end;
+  }
+
+  .hero-tekst {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 30px 20px;
+  }
+
+  .hero-tekst h1 {
+    font-size: 50px;
+  }
+
+  .hero-tekst p {
+    font-size: 16px;
+  }
+
+  .forste {
+    flex-direction: column;
+    height: auto;
+    padding: 60px 20px;
+    gap: 30px;
+  }
+
+  .forstimg {
+    height: 280px;
+    margin-left: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .tekstfo {
+    padding: 0 20px;
+  }
+
+  .fohe {
+    font-size: 60px;
+  }
+
+  .fote {
+    font-size: 16px;
+  }
+
+  .andre {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .accordion {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .accordion-btn {
+    font-size: 18px;
+  }
+
+  .tredje {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .tredje h1 {
+    font-size: 50px;
+  }
+
+  .karusell-vindu {
+    width: 300px;
+  }
+
+  .karusell-kort {
+    width: 300px;
+  }
+
+  .karusell-kort img {
+    width: 300px;
+    height: 220px;
+  }
+
+  .pil {
+    width: 38px;
+    height: 38px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 22px;
+  }
+
+  nav a {
+    font-size: 0.85rem;
+  }
+
+  .hero-tekst h1 {
+    font-size: 40px;
+  }
+
+  .fohe {
+    font-size: 48px;
+  }
+
+  .karusell-vindu {
+    width: 240px;
+  }
+
+  .karusell-kort {
+    width: 240px;
+  }
+
+  .karusell-kort img {
+    width: 240px;
+    height: 180px;
+  }
 }
